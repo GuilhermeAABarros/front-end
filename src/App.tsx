@@ -17,7 +17,6 @@ function App() {
   const [previousResults, setPreviousResults] = useState<AnalysisResult[]>([]);
   const [selectedResult, setSelectedResult] = useState<AnalysisResult | null>(null);
 
-  const handleImageSelected = (imageUrl: string) => {
   const handleImageSelected = (imageUrl: string, location?: string) => {
     processImage(imageUrl, location);
     setSelectedResult(null);
